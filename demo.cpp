@@ -6,7 +6,12 @@ class car{
   string model;
   int year;
   public:
+    void greet(void){
+      cout << "\nWelcome to the car shop\n";
+    }
+
     void set_model(string company, string model, int year){
+      greet();
       this->company = company;
       this->model = model;
       this->year = year;
